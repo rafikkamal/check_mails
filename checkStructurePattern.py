@@ -33,6 +33,9 @@ log_file=open(log_filename, 'w+')
 # Determines whether to write log or not
 debug_enabled=1
 
+# Valid Emails Counter
+valid_emails_counter=0
+
 
 def getFilename():
    global filename
@@ -43,6 +46,7 @@ def setFilename(newFilename):
    if(len(newFilename)>0):
       global filename
       filename = newFilename
+
 
 def writeLog(message, type="debug"):
    global debug_enabled
@@ -78,8 +82,10 @@ def emailStructureCheck(filename):
       try:
          global tmp_valid_emails_file
          global tmp_invalid_emails_file
+         global valid_emails_counter
          for line in f:
             if validate_email(line):
+               valid_emails_counter+=1
                #valid_emails_file.write(line)
                tmp_valid_emails_file.write(line)
             else:
@@ -177,6 +183,11 @@ def processEmails():
       writeLog("Completed iteration no# "+str(i))
 
 
+def getTmpTotalValidEmailsCount():
+   global valid_emails_counter
+   return valid_emails_counter
+
+
 def main():
    startTime = time.ctime(time.time())
    processEmails()
@@ -185,6 +196,7 @@ def main():
    print("End Time : {}".format(endTime))
    checkProcessedFilesStatus()
    os.system('find ./ -name "tmp_validity_*.txt" -exec rm \{\} \;')
+   #exit()
 
 
 if __name__ == "__main__":

@@ -94,7 +94,7 @@ def checkDisposable(input_file_path):
             output_file.write(line)
             #disposable_lines_hash.add(hashValue)
          else:
-            #print(line+" is disposable")
+#             print(line+" is disposable")
             disposable_counter+=1
             output_disposable_file.write(line)
       else:

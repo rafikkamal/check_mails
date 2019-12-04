@@ -8,6 +8,8 @@ import checkDisposable
 
 class MyClass:
    originalFilename=""
+   totalTmpValidEmailsCount=0
+
    def __init__(self, filename):
       self.filename=filename
       global originalFilename
@@ -36,12 +38,12 @@ class MyClass:
       return
 
 
-   def mergeToFinalResultFile(srcFile, destFile):
+   def mergeToFinalResultFile(self, srcFile, destFile):
       cmd="cat "+srcFile+" >> "+destFile
       os.system(cmd)
 
 
-   def removeTmpFiles(filename):
+   def removeTmpFiles(self, filename):
       cmd="rm "+filename
       os.system(cmd)
 
@@ -50,12 +52,17 @@ class MyClass:
       print("cleaning started")
       checkStructurePattern.setFilename(self.getNextFileToBeProcessed())
       checkStructurePattern.main()
+      global totalTmpValidEmailsCount
+      totalTmpValidEmailsCount = checkStructurePattern.getTmpTotalValidEmailsCount()
+      print(totalTmpValidEmailsCount)
       print("cleaning done, files generated")
 
 
    def cleanDuplicateEmails(self):
       print("2nd cleaning started")
       checkDuplicate.setFilename(self.getNextFileToBeProcessed())
+      global totalTmpValidEmailsCount
+      checkDuplicate.setTotalLinesExternal(totalTmpValidEmailsCount)
       checkDuplicate.main()
       print("2nd cleaning done, files generated")
 
@@ -69,7 +76,7 @@ class MyClass:
 
    def startCleaning(self):
       #self.cleanInvalidEmails(self.getOriginalFilename())
-      startTime = time.ctime(time.time())
+      finalStartTime = time.ctime(time.time())
       self.setNextFileToBeProcessed(self.getOriginalFilename())
       self.cleanInvalidEmails()
       time.sleep(2)
@@ -79,12 +86,8 @@ class MyClass:
       self.setNextFileToBeProcessed("tmp_non_duplicate_emails.txt")
       self.checkDisposableEmails()
       self.setNextFileToBeProcessed("tmp_non_disposable_emails.txt")
-      endTime = time.ctime(time.time())
 
-      print("\nFinal Time Calculation")
-      print("Start Time : "+startTime)
-      print("End Time : "+endTime)
-      exit("done")
+
 
       # Generate Report For Later Purpose
       #generateReport(self.originalFilename)
@@ -106,12 +109,20 @@ class MyClass:
       self.removeTmpFiles("tmp_invalid_emails.txt")
       self.removeTmpFiles("tmp_disposable_emails.txt")
       self.removeTmpFiles("tmp_duplicate_emails.txt")
-      self.removeTmpFiles(self.originalFilename)
+      #self.removeTmpFiles(self.originalFilename)
+
+      finalEndTime = time.ctime(time.time())
+
+      print("\nFinal Time Calculation")
+      print("Start Time : "+finalStartTime)
+      print("End Time : "+finalEndTime)
+      exit("done")
 
       return self.filename
 
 
-filename="two_lakh.txt"
+filename="one_lakh.txt"
+#filename="two_lakh.txt"
 p1=MyClass(filename)
 print(p1.getOriginalFilename())
 p1.setOriginalFilename(filename)

@@ -33,6 +33,11 @@ def setFilename(newFilename):
       filename = newFilename
 
 
+def setTotalLinesExternal(lines):
+   global total_lines
+   total_lines = lines
+
+
 def getTotalLines(filename):
    global total_lines
    #cmd="wc -l "+filename+" | cut -f1 -d' '"
@@ -100,7 +105,9 @@ def processEmails():
 #    print("Filename : {}".format(filename))
 #    exit()
    print("Working Filename : "+filename)
-   getTotalLines(filename)
+
+   #getTotalLines(filename)
+
    print("Total lines in file for duplicate emails checking : "+str(total_lines))
    getTotalIterations()
    for i in range(1, iterations+1):
