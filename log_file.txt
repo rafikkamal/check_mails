@@ -1,0 +1,220 @@
+Total iteration for two_lakh.txt : 20
+
+Working with file: two_lakh.txt
+
+Working with iteration no# 1
+
+Generate tmp file => head -n 10000 two_lakh.txt | tail -n 10000 > tmp_validity_1.txt;
+
+Iteration no# 1, working with : tmp_validity_1.txt
+
+Checking emails under file tmp_validity_1.txt
+
+$$$ Invalid email found and writing in invalid.txt file => EMAIL
+
+$$$ Invalid email found and writing in invalid.txt file => .hockeyrose2430@hotmail.com
+
+$$$ Invalid email found and writing in invalid.txt file => this.is.wrong
+
+$$$ Invalid email found and writing in invalid.txt file => 4sdf;fdkafadfasfkj324jfjdfk
+
+$$$ Invalid email found and writing in invalid.txt file => 7@gmaol.com.
+
+$$$ Invalid email found and writing in invalid.txt file => a_sdflsad.@gmail.com
+
+$$$ Invalid email found and writing in invalid.txt file => aaffa@.gmail.com
+
+$$$ Invalid email found and writing in invalid.txt file => asdf.@.fmadfl
+
+Completed iteration no# 1
+
+Working with iteration no# 2
+
+Generate tmp file => head -n 20000 two_lakh.txt | tail -n 10000 > tmp_validity_2.txt;
+
+Iteration no# 2, working with : tmp_validity_2.txt
+
+Checking emails under file tmp_validity_2.txt
+
+Completed iteration no# 2
+
+Working with iteration no# 3
+
+Generate tmp file => head -n 30000 two_lakh.txt | tail -n 10000 > tmp_validity_3.txt;
+
+Iteration no# 3, working with : tmp_validity_3.txt
+
+Checking emails under file tmp_validity_3.txt
+
+Completed iteration no# 3
+
+Working with iteration no# 4
+
+Generate tmp file => head -n 40000 two_lakh.txt | tail -n 10000 > tmp_validity_4.txt;
+
+Iteration no# 4, working with : tmp_validity_4.txt
+
+Checking emails under file tmp_validity_4.txt
+
+Completed iteration no# 4
+
+Working with iteration no# 5
+
+Generate tmp file => head -n 50000 two_lakh.txt | tail -n 10000 > tmp_validity_5.txt;
+
+Iteration no# 5, working with : tmp_validity_5.txt
+
+Checking emails under file tmp_validity_5.txt
+
+Completed iteration no# 5
+
+Working with iteration no# 6
+
+Generate tmp file => head -n 60000 two_lakh.txt | tail -n 10000 > tmp_validity_6.txt;
+
+Iteration no# 6, working with : tmp_validity_6.txt
+
+Checking emails under file tmp_validity_6.txt
+
+Completed iteration no# 6
+
+Working with iteration no# 7
+
+Generate tmp file => head -n 70000 two_lakh.txt | tail -n 10000 > tmp_validity_7.txt;
+
+Iteration no# 7, working with : tmp_validity_7.txt
+
+Checking emails under file tmp_validity_7.txt
+
+Completed iteration no# 7
+
+Working with iteration no# 8
+
+Generate tmp file => head -n 80000 two_lakh.txt | tail -n 10000 > tmp_validity_8.txt;
+
+Iteration no# 8, working with : tmp_validity_8.txt
+
+Checking emails under file tmp_validity_8.txt
+
+Completed iteration no# 8
+
+Working with iteration no# 9
+
+Generate tmp file => head -n 90000 two_lakh.txt | tail -n 10000 > tmp_validity_9.txt;
+
+Iteration no# 9, working with : tmp_validity_9.txt
+
+Checking emails under file tmp_validity_9.txt
+
+Completed iteration no# 9
+
+Working with iteration no# 10
+
+Generate tmp file => head -n 100000 two_lakh.txt | tail -n 10000 > tmp_validity_10.txt;
+
+Iteration no# 10, working with : tmp_validity_10.txt
+
+Checking emails under file tmp_validity_10.txt
+
+Completed iteration no# 10
+
+Working with iteration no# 11
+
+Generate tmp file => head -n 110000 two_lakh.txt | tail -n 10000 > tmp_validity_11.txt;
+
+Iteration no# 11, working with : tmp_validity_11.txt
+
+Checking emails under file tmp_validity_11.txt
+
+Completed iteration no# 11
+
+Working with iteration no# 12
+
+Generate tmp file => head -n 120000 two_lakh.txt | tail -n 10000 > tmp_validity_12.txt;
+
+Iteration no# 12, working with : tmp_validity_12.txt
+
+Checking emails under file tmp_validity_12.txt
+
+Completed iteration no# 12
+
+Working with iteration no# 13
+
+Generate tmp file => head -n 130000 two_lakh.txt | tail -n 10000 > tmp_validity_13.txt;
+
+Iteration no# 13, working with : tmp_validity_13.txt
+
+Checking emails under file tmp_validity_13.txt
+
+Completed iteration no# 13
+
+Working with iteration no# 14
+
+Generate tmp file => head -n 140000 two_lakh.txt | tail -n 10000 > tmp_validity_14.txt;
+
+Iteration no# 14, working with : tmp_validity_14.txt
+
+Checking emails under file tmp_validity_14.txt
+
+Completed iteration no# 14
+
+Working with iteration no# 15
+
+Generate tmp file => head -n 150000 two_lakh.txt | tail -n 10000 > tmp_validity_15.txt;
+
+Iteration no# 15, working with : tmp_validity_15.txt
+
+Checking emails under file tmp_validity_15.txt
+
+Completed iteration no# 15
+
+Working with iteration no# 16
+
+Generate tmp file => head -n 160000 two_lakh.txt | tail -n 10000 > tmp_validity_16.txt;
+
+Iteration no# 16, working with : tmp_validity_16.txt
+
+Checking emails under file tmp_validity_16.txt
+
+Completed iteration no# 16
+
+Working with iteration no# 17
+
+Generate tmp file => head -n 170000 two_lakh.txt | tail -n 10000 > tmp_validity_17.txt;
+
+Iteration no# 17, working with : tmp_validity_17.txt
+
+Checking emails under file tmp_validity_17.txt
+
+Completed iteration no# 17
+
+Working with iteration no# 18
+
+Generate tmp file => head -n 180000 two_lakh.txt | tail -n 10000 > tmp_validity_18.txt;
+
+Iteration no# 18, working with : tmp_validity_18.txt
+
+Checking emails under file tmp_validity_18.txt
+
+Completed iteration no# 18
+
+Working with iteration no# 19
+
+Generate tmp file => head -n 190000 two_lakh.txt | tail -n 10000 > tmp_validity_19.txt;
+
+Iteration no# 19, working with : tmp_validity_19.txt
+
+Checking emails under file tmp_validity_19.txt
+
+Completed iteration no# 19
+
+Working with iteration no# 20
+
+Generate tmp file => head -n 200000 two_lakh.txt | tail -n 10000 > tmp_validity_20.txt;
+
+Iteration no# 20, working with : tmp_validity_20.txt
+
+Checking emails under file tmp_validity_20.txt
+
+Completed iteration no# 20
+
